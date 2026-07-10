@@ -4,11 +4,12 @@ import torch
 from tqdm import tqdm
 import pdb
 
-from pointpillars.utils import setup_seed
-from pointpillars.dataset import Kitti, get_dataloader
-from pointpillars.model import PointPillars
-from pointpillars.loss import Loss
+from utils import setup_seed
+from dataset import Kitti, get_dataloader
+from model import PointPillars
+from loss import Loss
 from torch.utils.tensorboard import SummaryWriter
+
 
 def save_summary(writer, loss_dict, global_step, tag, lr=None, momentum=None):
     for k, v in loss_dict.items():
@@ -197,10 +198,10 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Configuration Parameters')
-    parser.add_argument('--data_root', default='/mnt/ssd1/lifa_rdata/det/kitti', 
+    parser.add_argument('--data_root', default='/mnt/nfs_docker_volume/training-container-space/mnt/datasets/object-detection-datasets/open-source/KITTI', 
                         help='your data root for kitti')
     parser.add_argument('--saved_path', default='pillar_logs')
-    parser.add_argument('--batch_size', type=int, default=6)
+    parser.add_argument('--batch_size', type=int, default=18)
     parser.add_argument('--num_workers', type=int, default=4)
     parser.add_argument('--nclasses', type=int, default=3)
     parser.add_argument('--init_lr', type=float, default=0.00025)

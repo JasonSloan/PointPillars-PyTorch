@@ -1,0 +1,6 @@
+# ninja log v5
+2	50335	1783006224459204782	/mnt/nfs_docker_volume/training-container-space/code/PointPillars/ops/build/temp.linux-x86_64-3.9/voxelization/voxelization_cpu.o	341fd60feea2e04e
+1	50420	1783006224483204782	/mnt/nfs_docker_volume/training-container-space/code/PointPillars/ops/build/temp.linux-x86_64-3.9/voxelization/voxelization.o	fbc36e89dfe7eccf
+2	58519	1783006232567204888	/mnt/nfs_docker_volume/training-container-space/code/PointPillars/ops/build/temp.linux-x86_64-3.9/voxelization/voxelization_cuda.o	820bcb5194e9e721
+11	2784	1783006237743204957	/mnt/nfs_docker_volume/training-container-space/code/PointPillars/ops/build/temp.linux-x86_64-3.9/iou3d/iou3d_kernel.o	ce6f332697b9ef0c
+10	20523	1783006255475205190	/mnt/nfs_docker_volume/training-container-space/code/PointPillars/ops/build/temp.linux-x86_64-3.9/iou3d/iou3d.o	971658cf89343eed
